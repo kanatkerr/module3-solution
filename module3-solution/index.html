@@ -13,7 +13,7 @@
       font-family: Arial, sans-serif;
     }
 
-    /* Navbar */
+    /* NAVBAR */
     .navbar {
       background-color: #999;
       border: none;
@@ -33,42 +33,45 @@
       background-color: black !important;
     }
 
-    /* Menu items (mobile dropdown) */
-    .navbar-nav {
+    /* MOBILE MENU */
+    #collapsable-nav {
       background-color: white;
-      text-align: center;
     }
 
-    .navbar-nav li {
+    #collapsable-nav ul {
+      margin: 0;
+    }
+
+    #collapsable-nav li {
+      text-align: center;
       border-bottom: 1px solid black;
     }
 
-    /* Title */
-    h1 {
-      margin: 30px 0;
+    #collapsable-nav a {
+      color: black;
+      font-size: 18px;
     }
 
-    /* Content box */
+    /* TITLE */
+    h1 {
+      margin: 30px 0;
+      font-weight: bold;
+    }
+
+    /* CONTENT BOX */
     .menu-box {
       background-color: #999;
       padding: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     .menu-box h3 {
       text-align: center;
       margin-top: 0;
+      font-weight: bold;
     }
 
-    /* Desktop spacing */
-    @media (min-width: 768px) {
-      .menu-box {
-        margin-left: 0;
-        margin-right: 0;
-      }
-    }
-
-    /* Mobile spacing */
+    /* MOBILE SPACING */
     @media (max-width: 767px) {
       .menu-box {
         margin-left: 30px;
@@ -87,8 +90,9 @@
     <div class="navbar-header">
       <div class="navbar-brand">Food, LLC</div>
 
-      <!-- Button -->
-      <button type="button" class="navbar-toggle collapsed"
+      <!-- BURGER BUTTON -->
+      <button type="button"
+              class="navbar-toggle collapsed"
               data-toggle="collapse"
               data-target="#collapsable-nav">
         <span class="icon-bar"></span>
@@ -97,7 +101,7 @@
       </button>
     </div>
 
-    <!-- Menu -->
+    <!-- COLLAPSIBLE MENU -->
     <div id="collapsable-nav" class="collapse navbar-collapse">
       <ul class="nav navbar-nav visible-xs">
         <li><a href="#">Chicken</a></li>
@@ -118,6 +122,7 @@
 <div class="container">
   <div class="row">
 
+    <!-- ONLY ONE SECTION (как в задании) -->
     <div class="col-xs-12">
       <div class="menu-box">
         <h3>Chicken</h3>
@@ -126,6 +131,7 @@
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
     </div>
@@ -133,7 +139,7 @@
   </div>
 </div>
 
-<!-- JS -->
+<!-- JS (ОБЯЗАТЕЛЬНО для бургера) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
